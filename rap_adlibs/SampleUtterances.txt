@@ -1,0 +1,55 @@
+WhoDoYouHaveIntent what artists do you have
+WhoDoYouHaveIntent what artists do you have adlibs for
+WhoDoYouHaveIntent who do you have adlibs for
+WhoDoYouHaveIntent who do you have
+
+DoYouHaveIntent do you have {Artist} adlibs
+DoYouHaveIntent do you have any {Artist} adlibs
+DoYouHaveIntent do you have {Artist}
+DoYouHaveIntent do you have adlibs for {Artist}
+
+GetSpecificArtistAdlibIntent give me a {Artist} adlib
+GetSpecificArtistAdlibIntent can i get a {Artist} adlib
+GetSpecificArtistAdlibIntent gimme a {Artist} adlib
+GetSpecificArtistAdlibIntent for a {Artist} adlib
+GetSpecificArtistAdlibIntent for {Artist}
+
+RandomAdlibIntent to give me a random adlib
+RandomAdlibIntent give me an random adlib
+RandomAdlibIntent gimme a random adlib
+RandomAdlibIntent to gimme a random adlib
+RandomAdlibIntent for a random adlib
+RandomAdlibIntent to hit me with a random adlib
+RandomAdlibIntent to play a random adlib
+RandomAdlibIntent to play a random adlib
+
+RandomAdlibAnswerIntent thats {Artist}
+RandomAdlibAnswerIntent {Artist}
+RandomAdlibAnswerIntent is that {Artist}
+RandomAdlibAnswerIntent i believe thats {Artist}
+RandomAdlibAnswerIntent what is {Artist}
+RandomAdlibAnswerIntent i think thats {Artist}
+RandomAdlibAnswerIntent thats definitely {Artist}
+RandomAdlibAnswerIntent im sure thats {Artist}
+RandomAdlibAnswerIntent thats definitely {Artist}
+RandomAdlibAnswerIntent im gonna guess {Artist}
+RandomAdlibAnswerIntent i guess {Artist}
+RandomAdlibAnswerIntent the artist is {Artist}
+RandomAdlibAnswerIntent i know thats {Artist}
+RandomAdlibAnswerIntent thats {Artist} adlib
+RandomAdlibAnswerIntent {Artist} adlib
+RandomAdlibAnswerIntent is that {Artist} adlib
+RandomAdlibAnswerIntent i believe thats {Artist} adlib
+RandomAdlibAnswerIntent what is {Artist} adlib
+RandomAdlibAnswerIntent i think thats {Artist} adlib
+RandomAdlibAnswerIntent thats definitely {Artist} adlib
+RandomAdlibAnswerIntent im sure thats {Artist} adlib
+RandomAdlibAnswerIntent thats definitely {Artist} adlib
+RandomAdlibAnswerIntent im gonna guess {Artist} adlib
+RandomAdlibAnswerIntent i guess {Artist} adlib
+RandomAdlibAnswerIntent the artist is {Artist} adlib
+RandomAdlibAnswerIntent i know thats {Artist} adlib
+RandomAdlibAnswerIntent that adlib is {Artist}
+RandomAdlibAnswerIntent the adlib is {Artist}
+RandomAdlibAnswerIntent the adlib belongs to {Artist}
+RandomAdlibAnswerIntent is that adlib {Artist}

@@ -1,0 +1,47 @@
+{
+	"intents": [
+		{
+			"intent": "AMAZON.PauseIntent"
+		},
+		{
+			"intent": "RandomAdlibIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "Artist",
+					"type": "ARTIST_NAME"
+				}
+			],
+			"intent": "GetSpecificArtistAdlibIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "Artist",
+					"type": "ARTIST_NAME"
+				}
+			],
+			"intent": "DoYouHaveIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "Artist",
+					"type": "ARTIST_NAME"
+				}
+			],
+			"intent": "RandomAdlibAnswerIntent"
+		},
+		{
+			"intent": "WhoDoYouHaveIntent"
+		},
+		{
+			"intent": "AMAZON.StopIntent"
+		},
+		{
+			"intent": "AMAZON.ResumeIntent"
+		}
+	]
+}
+
