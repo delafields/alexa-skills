@@ -1,0 +1,198 @@
+{
+	"intents": [
+		{
+			"intent": "NewGameIntent"
+		},
+		{
+			"intent": "NextRoundIntent"
+		},
+		{
+			"intent": "RepeatChallengeIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "number_of_players",
+					"type": "AMAZON.NUMBER"
+				}
+			],
+			"intent": "NewGameNumPlayersAnswerIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "player_one_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_two_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				}
+			],
+			"intent": "GetTwoPlayerNamesIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "player_one_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_two_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_three_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				}
+			],
+			"intent": "GetThreePlayerNamesIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "player_one_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_two_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_three_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_four_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				}
+			],
+			"intent": "GetFourPlayerNamesIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "player_one_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_two_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_three_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_four_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_five_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				}
+			],
+			"intent": "GetFivePlayerNamesIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "player_one_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_two_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_three_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_four_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_five_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_six_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				}
+			],
+			"intent": "GetSixPlayerNamesIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "player_one_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_two_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_three_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_four_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_five_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_six_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_seven_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				}
+			],
+			"intent": "GetSevenPlayerNamesIntent"
+		},
+		{
+			"slots": [
+				{
+					"name": "player_one_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_two_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_three_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_four_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_five_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_six_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_seven_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				},
+				{
+					"name": "player_eight_name",
+					"type": "AMAZON.US_FIRST_NAME"
+				}
+			],
+			"intent": "GetEightPlayerNamesIntent"
+		}
+	]
+}
+

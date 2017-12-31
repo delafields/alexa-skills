@@ -1,0 +1,23 @@
+welcome: Welcome to jerozzi. Say Jerozzi start a new game to begin.
+
+new_game: Let's do it. Before we start, tell me how many people are playing.
+
+get_names: "Okay so {} people are playing. What are their names?"
+
+names_unequal_number: "The number of names didn't match the number of players you told me, could you say them again?"
+
+two_player_intro: "Okay so {} and {} are playing. If the names are wrong, say them again, otherwise, say start next round."
+
+three_player_intro: "Okay so {} {} and {} are playing. If the names are wrong, say them again, otherwise, say start next round."
+
+four_player_intro: "Okay so {} {} {} and {} are playing. If the names are wrong, say them again, otherwise, say start next round."
+
+five_player_intro: "Okay so {} {} {} {} and {} are playing. If the names are wrong, say them again, otherwise, say start next round."
+
+six_player_intro: "Okay so {} {} {} {} {} and {} are playing. If the names are wrong, say them again, otherwise, say start next round."
+
+seven_player_intro: "Okay so {} {} {} {} {} {} and {} are playing. If the names are wrong, say them again, otherwise, say start next round."
+
+eight_player_intro: "Okay so {} {} {} {} {} {} {} and {} are playing. If the names are wrong, say them again, otherwise, say start next round."
+
+game_over: "GAME OVER. Out of challenges"

@@ -1,0 +1,33 @@
+NewGameIntent to start a new game
+NewGameIntent start new game
+NewGameIntent begin game
+NextRoundIntent next round
+NextRoundIntent start next round
+RepeatChallengeIntent repeat that
+RepeatChallengeIntent repeat that challenge
+RepeatChallengeIntent repeat challenge
+RepeatChallengeIntent repeat that challenge
+NewGameNumPlayersAnswerIntent {number_of_players} players
+NewGameNumPlayersAnswerIntent there are {number_of_players} players
+NewGameNumPlayersAnswerIntent there are {number_of_players} of us
+GetTwoPlayerNamesIntent {player_one_name} and {player_two_name} are playing
+GetTwoPlayerNamesIntent {player_one_name} and {player_two_name}
+GetTwoPlayerNamesIntent {player_one_name} {player_two_name}
+GetThreePlayerNamesIntent {player_one_name} {player_two_name} and {player_three_name} are playing
+GetThreePlayerNamesIntent {player_one_name} {player_two_name} and {player_three_name}
+GetThreePlayerNamesIntent {player_one_name} {player_two_name} {player_three_name}
+GetFourPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} and {player_four_name} are playing
+GetFourPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} and {player_four_name}
+GetFourPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name}
+GetFivePlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} and {player_five_name} are playing
+GetFivePlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} and {player_five_name}
+GetFivePlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} {player_five_name}
+GetSixPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} {player_five_name} and {player_six_name} are playing
+GetSixPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} {player_five_name} and {player_six_name}
+GetSixPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} {player_five_name} {player_six_name}
+GetSevenPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} {player_five_name} {player_six_name} and {player_seven_name} are playing
+GetSevenPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} {player_five_name} {player_six_name} and {player_seven_name}
+GetSevenPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} {player_five_name} {player_six_name} {player_seven_name}
+GetEightPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} {player_five_name} {player_six_name} {player_seven_name} and {player_eight_name} are playing
+GetEightPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} {player_five_name} {player_six_name} {player_seven_name} and {player_eight_name}
+GetEightPlayerNamesIntent {player_one_name} {player_two_name} {player_three_name} {player_four_name} {player_five_name} {player_six_name} {player_seven_name} {player_eight_name}

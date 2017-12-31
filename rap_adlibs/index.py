@@ -16,7 +16,7 @@ logging.getLogger('flask_ask').setLevel(logging.INFO)
 @ask.launch
 def new_game():
     welcome_msg = "Welcome to rap adlibs. You can either say, give me an artist's adlib, or give me a random adlib, and guess who's it is."
-    return question(welcome_msg)
+    return statement(welcome_msg)
 
 
 @ask.intent('RandomAdlibIntent')
