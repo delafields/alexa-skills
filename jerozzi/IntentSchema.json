@@ -4,6 +4,9 @@
 			"intent": "NewGameIntent"
 		},
 		{
+			"intent": "EndGameIntent"
+		},
+		{
 			"intent": "NextRoundIntent"
 		},
 		{
@@ -195,4 +198,3 @@
 		}
 	]
 }
-

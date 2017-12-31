@@ -24,10 +24,7 @@ def new_game_one():
     return question(render_template("new_game"))
 
 
-@ask.intent(
-    "NewGameNumPlayersAnswerIntent", convert={
-        'number_of_players': int
-    })
+@ask.intent("NumPlayersIntent", convert={'number_of_players': int})
 def new_game_two(number_of_players):
     session.attributes['number_of_players'] = number_of_players
 
@@ -226,6 +223,12 @@ def repeat_challenge():
     else:
         rand_players = sample(players, k=num_participants)
         return question(challenge_message.format(*rand_players))
+
+
+@ask.intent("EndGameIntent")
+def end_game():
+
+    return statement(render_template("end_game"))
 
 
 if __name__ == '__main__':

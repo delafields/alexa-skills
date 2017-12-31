@@ -1,6 +1,12 @@
 NewGameIntent to start a new game
 NewGameIntent start new game
 NewGameIntent begin game
+
+EndGameIntent to end game
+EndGameIntent end game
+EndGameIntent to quit game
+EndGameIntent quit game
+
 NextRoundIntent next round
 NextRoundIntent start next round
 RepeatChallengeIntent repeat that
