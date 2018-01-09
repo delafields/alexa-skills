@@ -89,7 +89,7 @@ artists_names_list = [
     "Young Thug",
     "2 Chainz",
     "21 Savage",
-    "3 6 Mafia"
+    "3 6 Mafia",
     "50 Cent",
 ]
 
@@ -226,29 +226,346 @@ artists_names_synonyms = {
 }
 
 adlibs = {
-    "rick ross": [
-        "https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3",
-        "https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3"
+    "Action Bronson": [
+        "https://s3.amazonaws.com/rap-adlibs/ActionBronson_brosolino.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/ActionBronson_various.mp3"
     ],
-    "2 chains":
-    ["https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3"],
-    "quavo":
-    ["https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3"],
-    "gucci mane":
-    ["https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3"],
-    "travis scott": [
-        "https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3"
+    "Akon": ["https://s3.amazonaws.com/rap-adlibs/Akon_konvictMusic.mp3"],
+    "Big Boi": ["https://s3.amazonaws.com/rap-adlibs/BigBoi_boiStop.mp3"],
+    "Biggie Smalls": [
+        "https://s3.amazonaws.com/rap-adlibs/BiggieSmalls_babyBaby.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/BiggieSmalls_uhh.mp3"
     ],
-    "offset": [
-        "https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3"
+    "Big Sean": [
+        "https://s3.amazonaws.com/rap-adlibs/BigSean_boiDoIt.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/BigSean_various1.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/BigSean_various2.mp3"
     ],
-    "metro boomin": [
-        "https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3"
+    "Birdman": [
+        "https://s3.amazonaws.com/rap-adlibs/Birdman_birdcall.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Birdman_brrr.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Birdman_putSomeRespek.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Birdman_various1.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Birdman_various2.mp3"
     ],
-    "kanye west": [
-        "https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3"
+    "Bobby Shmurda":
+    ["https://s3.amazonaws.com/rap-adlibs/BobbyShmurda_ahAhAh.mp3"],
+    "Bun B": ["https://s3.amazonaws.com/rap-adlibs/BunB_UGKForLife.mp3"],
+    "Busta Rhymes": [
+        "https://s3.amazonaws.com/rap-adlibs/BustaRhymes_laugh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/BustaRhymes_yahyahyah.mp3"
     ],
-    "chance the rapper": [
-        "https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3"
-    ]
+    "Camron": ["https://s3.amazonaws.com/rap-adlibs/Camron_various1.mp3"],
+    "Chance The Rapper":
+    ["https://s3.amazonaws.com/rap-adlibs/ChanceTheRapper_aah.mp3"],
+    "Chief Keef":
+    ["https://s3.amazonaws.com/rap-adlibs/ChiefKeef_bangBang.mp3"],
+    "Chingy": ["https://s3.amazonaws.com/rap-adlibs/Chingy_rightThurr.mp3"],
+    "Currensy": ["https://s3.amazonaws.com/rap-adlibs/Currensy_jetLife.mp3"],
+    "Danny Brown": [
+        "https://s3.amazonaws.com/rap-adlibs/DannyBrown_laugh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/DannyBrown_various1.mp3"
+    ],
+    "Designer": [
+        "https://s3.amazonaws.com/rap-adlibs/Desiigner_fsdhjklf.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Desiigner_panda.mp3"
+    ],
+    "DJ Drama": ["https://s3.amazonaws.com/rap-adlibs/DJDrama.mp3"],
+    "DJ Khaled": [
+        "https://s3.amazonaws.com/rap-adlibs/DJKhaled_djKhaled.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/DJKhaled_forThaHood.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/DJKhaled_various1.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/DJKhaled_various2.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/DJKhaled_various3.mp3"
+    ],
+    "DJ Mustard": ["https://s3.amazonaws.com/rap-adlibs/DJMustard.mp3"],
+    "DJ Paul": ["https://s3.amazonaws.com/rap-adlibs/DJPaul_various.mp3"],
+    "DMX": [
+        "https://s3.amazonaws.com/rap-adlibs/DMX_cmon.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/DMX_grrBark.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/DMX_uhh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/DMX_yeah.mp3"
+    ],
+    "Drake": [
+        "https://s3.amazonaws.com/rap-adlibs/Drake_alright.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Drake_godDamn.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Drake_uhh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Drake_worst.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Drake_yeah.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Drake_yeahYeah.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Drake_youngMoney.mp3"
+    ],
+    "E 40": [
+        "https://s3.amazonaws.com/rap-adlibs/E40_eouh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/E40_ghostRideDaWhip.mp3"
+    ],
+    "Eminem": [
+        "https://s3.amazonaws.com/rap-adlibs/Eminem_myNameIs.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Eminem_slimShady.mp3"
+    ],
+    "Fat Joe": [
+        "https://s3.amazonaws.com/rap-adlibs/FatJoe_crack.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/FatJoe_oww.mp3"
+    ],
+    "Fetty Wap": [
+        "https://s3.amazonaws.com/rap-adlibs/FettyWap_1738.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/FettyWap_ayYahBaby.mp3"
+    ],
+    "French Montana": [
+        "https://s3.amazonaws.com/rap-adlibs/FrenchMontana_haan.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/FrenchMontana_montana.mp3"
+    ],
+    "Future": [
+        "https://s3.amazonaws.com/rap-adlibs/Future_brrStickEm.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Future_hendrix.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Future_wooh.mp3"
+    ],
+    "Gucci Mane": [
+        "https://s3.amazonaws.com/rap-adlibs/GucciMane_burr.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/GucciMane_damn.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/GucciMane_itsGucci.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/GucciMane_yeuh.mp3"
+    ],
+    "Hurricane Chris": [
+        "https://s3.amazonaws.com/rap-adlibs/HurricaneChris_ayBaby.mp3"
+    ],
+    "Jadakiss": ["https://s3.amazonaws.com/rap-adlibs/Jadakiss_aha.mp3"],
+    "Ja Rule": [
+        "https://s3.amazonaws.com/rap-adlibs/JaRule_hollaHolla.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/JaRule_itsMurda.mp3"
+    ],
+    "Jay Z": [
+        "https://s3.amazonaws.com/rap-adlibs/JayZ_hovChyeah.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/JayZ_JiggaMan.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/JayZ_uhuhuh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/JayZ_various1.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/JayZ_various2.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/JayZ_yessir.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/JayZ_yo.mp3"
+    ],
+    "J Cole": ["https://s3.amazonaws.com/rap-adlibs/JCole_biyitch.mp3"],
+    "Jim Jones": ["https://s3.amazonaws.com/rap-adlibs/JimJones_various1.mp3"],
+    "Juelz Santana": [
+        "https://s3.amazonaws.com/rap-adlibs/JuelzSantana_aye.mp3"
+    ],
+    "Juicy J": ["https://s3.amazonaws.com/rap-adlibs/JuicyJ_various2.mp3"],
+    "Kanye West": [
+        "https://s3.amazonaws.com/rap-adlibs/Kanye_uh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Kanye_uhuh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Kanye_wooh.mp3"
+    ],
+    "Kendrick Lamar": [
+        "https://s3.amazonaws.com/rap-adlibs/KendrickLamar_biyatch.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/KendrickLamar_dodododo.mp3"
+    ],
+    "Killa Mike": [
+        "https://s3.amazonaws.com/rap-adlibs/KillaMike_crimeTimeRapGame.mp3"
+    ],
+    "Lil B": ["https://s3.amazonaws.com/rap-adlibs/LilB_swag.mp3"],
+    "Lil Jon": [
+        "https://s3.amazonaws.com/rap-adlibs/LilJon_okay.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilJon_what.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilJon_whatsHappenin.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilJon_yeah.mp3"
+    ],
+    "Lil Kim": ["https://s3.amazonaws.com/rap-adlibs/LilKim_queenBee.mp3"],
+    "Lil Pump": [
+        "https://s3.amazonaws.com/rap-adlibs/LilPump_Esketit.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilPump_ooh.mp3"
+    ],
+    "Lil Scrappy": [
+        "https://s3.amazonaws.com/rap-adlibs/LilScrappy_okaykaykay.mp3"
+    ],
+    "Lil Uzi Vert": [
+        "https://s3.amazonaws.com/rap-adlibs/LilUziVert_yeuh.mp3"
+    ],
+    "Lil Wayne": [
+        "https://s3.amazonaws.com/rap-adlibs/LilWayne_damn.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilWayne_datRight.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilWayne_hitMe.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilWayne_various1.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilWayne_various2.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilWayne_various3.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilWayne_whatItIs.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LilWayne_youngMoolaBaby.mp3"
+    ],
+    "Lil Yachty": [
+        "https://s3.amazonaws.com/rap-adlibs/LilYachty_lilBoat.mp3"
+    ],
+    "Lloyd Banks": [
+        "https://s3.amazonaws.com/rap-adlibs/LloydBanks_uhh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/LloydBanks_yeah.mp3"
+    ],
+    "Ludacris": ["https://s3.amazonaws.com/rap-adlibs/Ludacris_luda.mp3"],
+    "Made in Tyo": [
+        "https://s3.amazonaws.com/rap-adlibs/MadeInTyo_skrtskrt.mp3"
+    ],
+    "Mannie Fresh": [
+        "https://s3.amazonaws.com/rap-adlibs/MannieFresh_frefreFresh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/MannieFresh_ladiesAndGentlemen.mp3"
+    ],
+    "Meek Mill": [
+        "https://s3.amazonaws.com/rap-adlibs/MeekMill_blahblah.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/MeekMill_uhh.mp3"
+    ],
+    "Metro Boomin": [
+        "https://s3.amazonaws.com/rap-adlibs/MetroBoomin_wantsSomeMore.mp3"
+    ],
+    "Migos": [
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_aye.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_ayeTakeoff.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_damn.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_grah.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_money.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_uhh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Quavo_gone.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Quavo_hey.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Quavo_MAMA.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Quavo_migos.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Quavo_yeuck.mp3"
+    ],
+    "Mike Jones": [
+        "https://s3.amazonaws.com/rap-adlibs/MikeJones_chyeah.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/MikeJones_iceAge.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/MikeJones_mikeJones.mp3"
+    ],
+    "Nas": ["https://s3.amazonaws.com/rap-adlibs/Nas_various1.mp3"],
+    "Nate Dogg": ["https://s3.amazonaws.com/rap-adlibs/NateDogg_holdUp.mp3"],
+    "Nicki Minaj": [
+        "https://s3.amazonaws.com/rap-adlibs/NickiMinaj_various1.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/NickiMinaj_various2.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/NickiMinaj_various3.mp3"
+    ],
+    "ODB": ["https://s3.amazonaws.com/rap-adlibs/ODB_shimmyYa.mp3"],
+    "OJ Da Juiceman": [
+        "https://s3.amazonaws.com/rap-adlibs/OjDaJuiceman_aye.mp3"
+    ],
+    "P Diddy": [
+        "https://s3.amazonaws.com/rap-adlibs/PDiddy_various1.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/PDiddy_various2.mp3"
+    ],
+    "Pharrell": ["https://s3.amazonaws.com/rap-adlibs/Pharrell_yezzir.mp3"],
+    "Pimp C": [
+        "https://s3.amazonaws.com/rap-adlibs/PimpC_holUp.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/PimpC_smokeSomethin.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/PimpC_sweetJones.mp3"
+    ],
+    "Pitbull": [
+        "https://s3.amazonaws.com/rap-adlibs/Pitbull_DALE.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Pitbull_mr305.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Pitbull_yeeoh.mp3"
+    ],
+    "Project Pat": [
+        "https://s3.amazonaws.com/rap-adlibs/ProjectPat_goodGooglyMoogly.mp3"
+    ],
+    "Pusha T": ["https://s3.amazonaws.com/rap-adlibs/PushaT_yeuck.mp3"],
+    "Quavo": [
+        "https://s3.amazonaws.com/rap-adlibs/Quavo_gone.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Quavo_hey.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Quavo_MAMA.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Quavo_migos.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Quavo_yeuck.mp3"
+    ],
+    "Rae Sremmurd": [
+        "https://s3.amazonaws.com/rap-adlibs/RaeSremmurd_hey.mp3"
+    ],
+    "Rick Ross": [
+        "https://s3.amazonaws.com/rap-adlibs/RickRoss_bawse.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/RickRoss_rickyRoss.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/RickRoss_uhh.mp3"
+    ],
+    "Schoolboy Q": [
+        "https://s3.amazonaws.com/rap-adlibs/SchoolboyQ_yakyakyak.mp3"
+    ],
+    "Slim Thug": [
+        "https://s3.amazonaws.com/rap-adlibs/SlimThug_bossHogOutlaws.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/SlimThug_slimThugga.mp3"
+    ],
+    "Snoop Dogg": [
+        "https://s3.amazonaws.com/rap-adlibs/SnoopDogg_bigSnoopDODub.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/SnoopDogg_bladauw.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/SnoopDogg_talmBout.mp3"
+    ],
+    "Soulja Boy": [
+        "https://s3.amazonaws.com/rap-adlibs/SouljaBoy_souljer.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/SouljaBoy_tellEm.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/SouljaBoy_yoooh.mp3"
+    ],
+    "Swizz Beatz": [
+        "https://s3.amazonaws.com/rap-adlibs/SwizzBeatz_godDamnit.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/SwizzBeatz_itsShowtime.mp3"
+    ],
+    "Takeoff": [
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_aye.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_ayeTakeoff.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_damn.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_grah.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_money.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Takeoff_uhh.mp3"
+    ],
+    "T I": [
+        "https://s3.amazonaws.com/rap-adlibs/TI_aintReadyFaDis.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/TI_grandHustlePatna.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/TI_TIP.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/TI_various1.mp3"
+    ],
+    "T Pain": [
+        "https://s3.amazonaws.com/rap-adlibs/TPain_hey.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/TPain_nappyBoy.mp3"
+    ],
+    "Trapaholics": [
+        "https://s3.amazonaws.com/rap-adlibs/Trapaholics_damnSon.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Trapaholics_trapaholicsMixtapes.mp3"
+    ],
+    "Travis Scott": [
+        "https://s3.amazonaws.com/rap-adlibs/TravisScott_laFlame.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/TravisScott_straightUp.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/TravisScott_yah.mp3"
+    ],
+    "Trick Daddy": [
+        "https://s3.amazonaws.com/rap-adlibs/TrickDaddy_trickLuhDaKids.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/TrickDaddy_uhuhOkayWassup.mp3"
+    ],
+    "Tupac": [
+        "https://s3.amazonaws.com/rap-adlibs/Tupac_babay.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/Tupac_thugLife.mp3"
+    ],
+    "Tyga": ["https://s3.amazonaws.com/rap-adlibs/Tyga_uhh.mp3"],
+    "Waka Flocka Flame": [
+        "https://s3.amazonaws.com/rap-adlibs/WakaFlocka_brickSquad.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/WakaFlocka_flocka.mp3"
+    ],
+    "Wiz Khalifa": [
+        "https://s3.amazonaws.com/rap-adlibs/WizKhalifa_laugh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/WizKhalifa_uhh.mp3"
+    ],
+    "Ying Yang Twins": [
+        "https://s3.amazonaws.com/rap-adlibs/YingYangTwins_haaan.mp3"
+    ],
+    "Young Jeezy": [
+        "https://s3.amazonaws.com/rap-adlibs/YoungJeezy_aye.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/YoungJeezy_haha.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/YoungJeezy_yeah.mp3"
+    ],
+    "Young Thug": [
+        "https://s3.amazonaws.com/rap-adlibs/YoungThug_nonsense.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/YoungThug_ooh.mp3"
+    ],
+    "2 Chainz": [
+        "https://s3.amazonaws.com/rap-adlibs/2Chainz_2chainz.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/2Chainz_tellEm.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/2Chainz_true.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/2Chainz_yah.mp3"
+    ],
+    "21 Savage": ["https://s3.amazonaws.com/rap-adlibs/21Savage_21.mp3"],
+    "3 6 Mafia": [
+        "https://s3.amazonaws.com/rap-adlibs/DJPaul_various.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/JuicyJ_various2.mp3"
+    ],
+    "50 Cent": [
+        "https://s3.amazonaws.com/rap-adlibs/50Cent_g-unit.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/50Cent_its50.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/50Cent_laugh.mp3",
+        "https://s3.amazonaws.com/rap-adlibs/50Cent_yeah.mp3"
+    ],
 }
