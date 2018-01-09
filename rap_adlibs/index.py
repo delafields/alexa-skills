@@ -15,7 +15,7 @@ logging.getLogger('flask_ask').setLevel(logging.INFO)
 
 @ask.launch
 def new_game():
-    welcome_msg = "Welcome to rap adlibs. You can either say, give me an artist's adlib, or give me a random adlib, and guess who's it is."
+    welcome_msg = "Welcome to rap adlibs! You can either say, who do you have or, do you have an artist, or give me an artist's adlib, or give me a random adlib, and guess who it is."
     return statement(welcome_msg)
 
 
@@ -47,7 +47,7 @@ def answer(artist):
 
     # If they got it right, say yes. If not, tell em who it is.
     if found == True and winning_answer == artist:
-        msg = "You got it"
+        msg = "Correct!"
     else:
         msg = '<speak><audio src="https://s3.amazonaws.com/rap-adlibs/WRONGANSWER.mp3" /> <break time="500ms" /> it was {}</speak>'.format(
             winning_answer)
