@@ -1,12 +1,16 @@
-WhoDoYouHaveIntent what artists do you have
-WhoDoYouHaveIntent what artists do you have adlibs for
-WhoDoYouHaveIntent who do you have adlibs for
-WhoDoYouHaveIntent who do you have
-
-DoYouHaveIntent do you have {Artist} adlibs
-DoYouHaveIntent do you have any {Artist} adlibs
-DoYouHaveIntent do you have {Artist}
-DoYouHaveIntent do you have adlibs for {Artist}
+RandomAdlibIntent to give me a random adlib
+RandomAdlibIntent to give me a random artist
+RandomAdlibIntent give me a random adlib
+RandomAdlibIntent give me a random artist
+RandomAdlibIntent gimme a random adlib
+RandomAdlibIntent gimme a random artist
+RandomAdlibIntent to gimme a random adlib
+RandomAdlibIntent to gimme a random artist
+RandomAdlibIntent for a random adlib
+RandomAdlibIntent for a random artist
+RandomAdlibIntent to hit me with a random adlib
+RandomAdlibIntent to play a random adlib
+RandomAdlibIntent to play a random artist
 
 GetSpecificArtistAdlibIntent give me a {Artist} adlib
 GetSpecificArtistAdlibIntent can i get a {Artist} adlib
@@ -14,14 +18,10 @@ GetSpecificArtistAdlibIntent gimme a {Artist} adlib
 GetSpecificArtistAdlibIntent for a {Artist} adlib
 GetSpecificArtistAdlibIntent for {Artist}
 
-RandomAdlibIntent to give me a random adlib
-RandomAdlibIntent give me an random adlib
-RandomAdlibIntent gimme a random adlib
-RandomAdlibIntent to gimme a random adlib
-RandomAdlibIntent for a random adlib
-RandomAdlibIntent to hit me with a random adlib
-RandomAdlibIntent to play a random adlib
-RandomAdlibIntent to play a random adlib
+DoYouHaveIntent do you have {Artist} adlibs
+DoYouHaveIntent do you have any {Artist} adlibs
+DoYouHaveIntent do you have {Artist}
+DoYouHaveIntent do you have adlibs for {Artist}
 
 RandomAdlibAnswerIntent thats {Artist}
 RandomAdlibAnswerIntent {Artist}
@@ -53,3 +53,8 @@ RandomAdlibAnswerIntent that adlib is {Artist}
 RandomAdlibAnswerIntent the adlib is {Artist}
 RandomAdlibAnswerIntent the adlib belongs to {Artist}
 RandomAdlibAnswerIntent is that adlib {Artist}
+
+WhoDoYouHaveIntent what artists do you have
+WhoDoYouHaveIntent what artists do you have adlibs for
+WhoDoYouHaveIntent who do you have adlibs for
+WhoDoYouHaveIntent who do you have
