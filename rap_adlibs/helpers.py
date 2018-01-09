@@ -20,7 +20,6 @@ def get_random_adlib(artists_names_list, adlibs):
 
 def format_artist_synonyms(artist_name):
 
-    artist_name = artist_name.lower()
     found = False
     synonyms = artists_names_synonyms
 
@@ -311,8 +310,10 @@ def format_artist_synonyms(artist_name):
 def get_specific_artist(artist, artists_names_list, adlibs):
 
     # returns the name of the artist after checking synonyms
-    artist = artist.lower()
+    # Removing artist = artist.lower()
+    print(artist)
     found, artist_name = format_artist_synonyms(artist)
+    print(artist_name)
 
     # If we have the artist, retrieve the name & adlib url
     if found == True:
