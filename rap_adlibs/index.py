@@ -24,8 +24,8 @@ def next_round():
     artist_name, artist_adlib = get_random_adlib(artists_names_list, adlibs)
 
     # Plays adlib–asks "guess who"
-    adlib_quiz_msg = '<speak>Okay heres the adlib for {} <break time="500ms" /><audio src="{}" /> <break time="500ms" /> Guess who it is</speak>'.format(
-        artist_name, artist_adlib)
+    adlib_quiz_msg = '<speak>Guess who this is <break time="500ms" /><audio src="{}" /></speak>'.format(
+        artist_adlib)
 
     # persists the random artist's name to compare against
     # the user's guess in 'RandomAdlibAnswerIntent'
@@ -38,7 +38,9 @@ def next_round():
 def answer(artist):
 
     # Checks if answer is correct or a synonym for correct answer
+    artist = artist.title()
     found, artist = format_artist_synonyms(artist)
+    artist = artist.title()
 
     # The persisted random_artist from 'RandomAdlibIntent'
     winning_answer = session.attributes['adlib-artist']
@@ -47,7 +49,8 @@ def answer(artist):
     if found == True and winning_answer == artist:
         msg = "You got it"
     else:
-        msg = "No fool, its not {}, it was {}".format(artist, winning_answer)
+        msg = '<speak><audio src="https://s3.amazonaws.com/rap-adlibs/WRONGANSWER.mp3" /> <break time="500ms" /> it was {}</speak>'.format(
+            winning_answer)
 
     return statement(msg)
 
@@ -57,13 +60,14 @@ def next_round(artist):
 
     # Takes the artist the user asks for,
     # returns whether we have them or not (found)
+    artist = artist.title()
     response = get_specific_artist(artist, artists_names_list, adlibs)
     found = response[0]
 
     if found == True:
         adlib_artist = response[1]
         adlib_audio_url = response[2]
-        msg = '<speak>Okay heres the adlib for {} <break time="500ms" /><audio src="{}" /> <break time="500ms" /></speak>'.format(
+        msg = '<speak>Here is a {} adlib <break time="500ms" /><audio src="{}" /> <break time="500ms" /></speak>'.format(
             adlib_artist, adlib_audio_url)
     elif found == False:
         msg = "<speak>I don't have that artist, sorry.</speak>"
@@ -93,7 +97,7 @@ def next_round(artist):
 @ask.intent('WhoDoYouHaveIntent')
 def next_round():
     artists_names_sentence = ", ".join(artists_names_list)
-    msg = '<speak>I have {}</speak>'.format(artists_names_sentence)
+    msg = '<speak>I have adlibs for {}</speak>'.format(artists_names_sentence)
     return statement(msg)
 
 
