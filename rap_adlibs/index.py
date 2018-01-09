@@ -31,7 +31,7 @@ def next_round():
     # the user's guess in 'RandomAdlibAnswerIntent'
     session.attributes['adlib-artist'] = artist_name
 
-    return question(adlib_quiz_msg)
+    return question(adlib_quiz_msg).reprompt(adlib_quiz_msg)
 
 
 @ask.intent('RandomAdlibAnswerIntent', mapping={'artist': 'Artist'})
