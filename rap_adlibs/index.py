@@ -19,8 +19,8 @@ def new_game():
     return statement(welcome_msg).standard_card(
         title="Rap Adlibs",
         text=welcome_msg,
-        small_image_url='./images/icon_small.png',
-        large_image_url='./images/icon_large.png')
+        small_image_url='https://s3.amazonaws.com/rap-adlibs/icon_large.png',
+        large_image_url='https://s3.amazonaws.com/rap-adlibs/icon_small.png')
 
 
 @ask.intent('RandomAdlibIntent')
@@ -36,7 +36,7 @@ def next_round():
     session.attributes['adlib-artist'] = artist_name
 
     return question(adlib_quiz_msg).reprompt(adlib_quiz_msg).simple_card(
-        title="Guess The Random Artist Adlib", content="Who it is!")
+        title="Guess The Random Artist Adlib", content="Who is it?")
 
 
 @ask.intent('RandomAdlibAnswerIntent', mapping={'artist': 'Artist'})
