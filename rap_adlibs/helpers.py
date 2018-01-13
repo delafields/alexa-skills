@@ -56,7 +56,7 @@ def format_artist_synonyms(artist_name):
         artist_name = "Camron"
         found = True
     elif artist_name in synonyms["Chance The Rapper"]:
-        artist_name = "Chance"
+        artist_name = "Chance The Rapper"
         found = True
     elif artist_name in synonyms["Chief Keef"]:
         artist_name = "Chief Keef"
@@ -311,9 +311,9 @@ def get_specific_artist(artist, artists_names_list, adlibs):
 
     # returns the name of the artist after checking synonyms
     # Removing artist = artist.lower()
-    print(artist)
+    print('Artist asked for:', artist)
     found, artist_name = format_artist_synonyms(artist)
-    print(artist_name)
+    print('Artist returned', artist_name)
 
     # If we have the artist, retrieve the name & adlib url
     if found == True:
