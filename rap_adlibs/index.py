@@ -15,10 +15,11 @@ logging.getLogger('flask_ask').setLevel(logging.INFO)
 
 @ask.launch
 def new_game():
-    welcome_msg = "Welcome to rap adlibs! You can either say, who do you have or, do you have an artist, or give me an artist's adlib, or give me a random adlib, and guess who it is."
+    card_text = "Welcome to rap adlibs! You can either say: Who do you have? Or do you have a certain artist? Or play a certain artist. Or give me a random adlib and then guess who it is."
+    welcome_msg = '<speak>Welcome to rap adlibs! <break time="200ms" /> You can either say who do you have? <break time="500ms" /> Or do you have a certain artist? <break time="500ms" /> Or play a certain artist. <break time="500ms" /> Or give me a random adlib and then guess who it is.</speak>'
     return statement(welcome_msg).standard_card(
-        title="Rap Adlibs",
-        text=welcome_msg,
+        title="Welcome To Rap Adlibs",
+        text=card_text,
         small_image_url='https://s3.amazonaws.com/rap-adlibs/icon_large.png',
         large_image_url='https://s3.amazonaws.com/rap-adlibs/icon_small.png')
 
@@ -43,9 +44,10 @@ def next_round():
 def answer(artist):
 
     # Checks if answer is correct or a synonym for correct answer
+    print('Random answer', artist)
     artist = artist.title()
     found, artist = format_artist_synonyms(artist)
-    artist = artist.title()
+    print('Random answer after synonym', artist)
 
     # The persisted random_artist from 'RandomAdlibIntent'
     winning_answer = session.attributes['adlib-artist']
@@ -53,11 +55,11 @@ def answer(artist):
     # If they got it right, say yes. If not, tell em who it is.
     if found == True and winning_answer == artist:
         msg = "Correct!"
-        card_text = "You got it right!"
+        card_text = "Right!"
     else:
-        card_text = "Wrong:("
         msg = '<speak><audio src="https://s3.amazonaws.com/rap-adlibs/WRONGANSWER.mp3" /> <break time="500ms" /> it was {}</speak>'.format(
             winning_answer)
+        card_text = "Wrong:("
 
     return statement(msg).simple_card(
         title="And your guess is...", content=card_text)
@@ -91,15 +93,16 @@ def next_round(artist):
 
     # Takes the artist the user asks for,
     # returns whether we have them or not (found)
+    artist = artist.title()
     response = get_specific_artist(artist, artists_names_list, adlibs)
     found = response[0]
 
     if found == True:
         adlib_artist = response[1]
         adlib_audio_url = response[2]
-        card_text = "I do have adlibs for {}!".format(adlib_artist)
+        card_text = "I do have adlibs for {}!".format(artist)
         msg = "<speak>Yeah, I have adlibs for {}, here's one <break time='500ms' /><audio src='{}' /> <break time='500ms' /></speak>".format(
-            adlib_artist, adlib_audio_url)
+            artist, adlib_audio_url)
     elif found == False:
         card_text = "I don't have that artist, sorry."
         msg = "<speak>I don't have that artist, sorry.</speak>"
@@ -111,7 +114,9 @@ def next_round(artist):
 def next_round():
     artists_names_sentence = ", ".join(artists_names_list)
     msg = '<speak>I have adlibs for {}</speak>'.format(artists_names_sentence)
-    return statement(msg).simple_card(title="Who Do You Have", content=msg)
+    card_text = 'I have adlibs for {}'.format(artists_names_sentence)
+    return statement(msg).simple_card(
+        title="Who Do You Have", content=card_text)
 
 
 @ask.intent("AMAZON.PauseIntent")
