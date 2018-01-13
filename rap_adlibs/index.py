@@ -53,9 +53,9 @@ def answer(artist):
     # If they got it right, say yes. If not, tell em who it is.
     if found == True and winning_answer == artist:
         msg = "Correct!"
-        card_text = "Wrong:("
-    else:
         card_text = "You got it right!"
+    else:
+        card_text = "Wrong:("
         msg = '<speak><audio src="https://s3.amazonaws.com/rap-adlibs/WRONGANSWER.mp3" /> <break time="500ms" /> it was {}</speak>'.format(
             winning_answer)
 
