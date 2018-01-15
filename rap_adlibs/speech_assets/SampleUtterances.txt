@@ -1,3 +1,19 @@
+GetSpecificArtistAdlibIntent to play {Artist}
+GetSpecificArtistAdlibIntent to play a {Artist} adlib
+GetSpecificArtistAdlibIntent play {Artist}
+GetSpecificArtistAdlibIntent for a {Artist} adlib
+
+WhoDoYouHaveIntent who do you have
+WhoDoYouHaveIntent who do you have adlibs for
+WhoDoYouHaveIntent what artists do you have
+WhoDoYouHaveIntent what artists do you have adlibs for
+
+DoYouHaveIntent do you have {Artist}
+DoYouHaveIntent do you have adlibs for {Artist}
+DoYouHaveIntent do you have any {Artist}
+DoYouHaveIntent do you have any adlibs for {Artist}
+DoYouHaveIntent do you have anything for {Artist}
+
 RandomAdlibIntent to give me a random adlib
 RandomAdlibIntent to give me a random artist
 RandomAdlibIntent give me a random adlib
@@ -6,30 +22,8 @@ RandomAdlibIntent gimme a random adlib
 RandomAdlibIntent gimme a random artist
 RandomAdlibIntent to gimme a random adlib
 RandomAdlibIntent to gimme a random artist
-RandomAdlibIntent for a random adlib
-RandomAdlibIntent for a random artist
 RandomAdlibIntent to play a random adlib
 RandomAdlibIntent to play a random artist
 
-GetSpecificArtistAdlibIntent to play {Artist}
-GetSpecificArtistAdlibIntent play {Artist}
-
-DoYouHaveIntent do you have {Artist}
-DoYouHaveIntent do you have adlibs for {Artist}
-DoYouHaveIntent do you have any {Artist}
-DoYouHaveIntent do you have any adlibs for {Artist}
-DoYouHaveIntent do you have anything for {Artist}
-
 RandomAdlibAnswerIntent thats {Artist}
 RandomAdlibAnswerIntent {Artist}
-RandomAdlibAnswerIntent i believe thats {Artist}
-RandomAdlibAnswerIntent what is {Artist}
-RandomAdlibAnswerIntent i think thats {Artist}
-RandomAdlibAnswerIntent thats definitely {Artist}
-RandomAdlibAnswerIntent im sure thats {Artist}
-RandomAdlibAnswerIntent im gonna guess {Artist}
-RandomAdlibAnswerIntent i guess {Artist}
-RandomAdlibAnswerIntent i know thats {Artist}
-RandomAdlibAnswerIntent the artist is {Artist}
-
-WhoDoYouHaveIntent who do you have

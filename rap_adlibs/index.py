@@ -17,11 +17,39 @@ logging.getLogger('flask_ask').setLevel(logging.INFO)
 def new_game():
     card_text = "Welcome to rap adlibs! You can either say: Who do you have? Or do you have a certain artist? Or play a certain artist. Or give me a random adlib and then guess who it is."
     welcome_msg = '<speak>Welcome to rap adlibs! <break time="200ms" /> You can either say who do you have? <break time="500ms" /> Or do you have a certain artist? <break time="500ms" /> Or play a certain artist. <break time="500ms" /> Or give me a random adlib and then guess who it is.</speak>'
-    return statement(welcome_msg).standard_card(
+    return question(welcome_msg).standard_card(
         title="Welcome To Rap Adlibs",
         text=card_text,
         small_image_url='https://s3.amazonaws.com/rap-adlibs/icon_large.png',
-        large_image_url='https://s3.amazonaws.com/rap-adlibs/icon_small.png')
+        large_image_url='https://s3.amazonaws.com/rap-adlibs/icon_small.png'
+    ).reprompt(welcome_msg)
+
+
+@ask.intent('GetSpecificArtistAdlibIntent', mapping={'artist': 'Artist'})
+def next_round(artist):
+
+    if artist is None or len(artist) <= 0:
+        msg = 'Your request did not include an artist'
+        card_text = 'Your request did not include an artist'
+    else:
+        # Takes the artist the user asks for,
+        # returns whether we have them or not (found)
+        artist = artist.title()
+        response = get_specific_artist(artist, artists_names_list, adlibs)
+        found = response[0]
+
+        if found == True:
+            adlib_artist = response[1]
+            adlib_audio_url = response[2]
+            card_text = "Here is an adlib for {}".format(adlib_artist)
+            msg = '<speak>Here is a {} adlib <break time="500ms" /><audio src="{}" /> <break time="500ms" /></speak>'.format(
+                adlib_artist, adlib_audio_url)
+        elif found == False:
+            card_text = "I don't have that artist, sorry."
+            msg = "<speak>I don't have that artist, sorry.</speak>"
+
+    return statement(msg).simple_card(
+        title="Specific Artist Adlib", content=card_text)
 
 
 @ask.intent('RandomAdlibIntent')
@@ -43,69 +71,54 @@ def next_round():
 @ask.intent('RandomAdlibAnswerIntent', mapping={'artist': 'Artist'})
 def answer(artist):
 
-    # Checks if answer is correct or a synonym for correct answer
-    print('Random answer', artist)
-    artist = artist.title()
-    found, artist = format_artist_synonyms(artist)
-    print('Random answer after synonym', artist)
-
-    # The persisted random_artist from 'RandomAdlibIntent'
-    winning_answer = session.attributes['adlib-artist']
-
-    # If they got it right, say yes. If not, tell em who it is.
-    if found == True and winning_answer == artist:
-        msg = "Correct!"
-        card_text = "Right!"
+    if artist is None or len(artist) <= 0:
+        msg = 'Your guess did not include an artist'
+        card_text = 'Your guess did not include an artist'
     else:
-        msg = '<speak><audio src="https://s3.amazonaws.com/rap-adlibs/WRONGANSWER.mp3" /> <break time="500ms" /> it was {}</speak>'.format(
-            winning_answer)
-        card_text = "Wrong:("
+        # Checks if answer is correct or a synonym for correct answer
+        print('Random answer', artist)
+        artist = artist.title()
+        found, artist = format_artist_synonyms(artist)
+        print('Random answer after synonym', artist)
+
+        # The persisted random_artist from 'RandomAdlibIntent'
+        winning_answer = session.attributes['adlib-artist']
+
+        # If they got it right, say yes. If not, tell em who it is.
+        if found == True and winning_answer == artist:
+            msg = "Correct!"
+            card_text = "Right!"
+        else:
+            msg = '<speak><audio src="https://s3.amazonaws.com/rap-adlibs/WRONGANSWER.mp3" /> <break time="500ms" /> it was {}</speak>'.format(
+                winning_answer)
+            card_text = "Wrong:("
 
     return statement(msg).simple_card(
         title="And your guess is...", content=card_text)
 
 
-@ask.intent('GetSpecificArtistAdlibIntent', mapping={'artist': 'Artist'})
-def next_round(artist):
-
-    # Takes the artist the user asks for,
-    # returns whether we have them or not (found)
-    artist = artist.title()
-    response = get_specific_artist(artist, artists_names_list, adlibs)
-    found = response[0]
-
-    if found == True:
-        adlib_artist = response[1]
-        adlib_audio_url = response[2]
-        card_text = "Here is an adlib for {}".format(adlib_artist)
-        msg = '<speak>Here is a {} adlib <break time="500ms" /><audio src="{}" /> <break time="500ms" /></speak>'.format(
-            adlib_artist, adlib_audio_url)
-    elif found == False:
-        card_text = "I don't have that artist, sorry."
-        msg = "<speak>I don't have that artist, sorry.</speak>"
-
-    return statement(msg).simple_card(
-        title="Specific Artist Adlib", content=card_text)
-
-
 @ask.intent('DoYouHaveIntent', mapping={'artist': 'Artist'})
 def next_round(artist):
 
-    # Takes the artist the user asks for,
-    # returns whether we have them or not (found)
-    artist = artist.title()
-    response = get_specific_artist(artist, artists_names_list, adlibs)
-    found = response[0]
+    if artist is None or len(artist) <= 0:
+        msg = 'You did not give me a valid artist'
+        card_text = 'You did not give me a valid artist'
+    else:
+        # Takes the artist the user asks for,
+        # returns whether we have them or not (found)
+        artist = artist.title()
+        response = get_specific_artist(artist, artists_names_list, adlibs)
+        found = response[0]
 
-    if found == True:
-        adlib_artist = response[1]
-        adlib_audio_url = response[2]
-        card_text = "I do have adlibs for {}!".format(artist)
-        msg = "<speak>Yeah, I have adlibs for {}, here's one <break time='500ms' /><audio src='{}' /> <break time='500ms' /></speak>".format(
-            artist, adlib_audio_url)
-    elif found == False:
-        card_text = "I don't have that artist, sorry."
-        msg = "<speak>I don't have that artist, sorry.</speak>"
+        if found == True:
+            adlib_artist = response[1]
+            adlib_audio_url = response[2]
+            card_text = "I do have adlibs for {}!".format(artist)
+            msg = "<speak>Yeah, I have adlibs for {}, here's one <break time='500ms' /><audio src='{}' /> <break time='500ms' /></speak>".format(
+                artist, adlib_audio_url)
+        elif found == False:
+            card_text = "I don't have that artist, sorry."
+            msg = "<speak>I don't have that artist, sorry.</speak>"
 
     return statement(msg).simple_card(title="Do I Have", content=card_text)
 
