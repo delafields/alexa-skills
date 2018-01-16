@@ -132,6 +132,18 @@ def next_round():
         title="Who Do You Have", content=card_text)
 
 
+@ask.intent('AMAZON.HelpIntent')
+def help():
+    msg = 'You can either say who do you have? <break time="500ms" /> Or do you have a certain artist? <break time="500ms" /> Or play a certain artist. <break time="500ms" /> Or give me a random adlib and then guess who it is.</speak>'
+    return question(msg).reprompt(msg)
+
+
+@ask.intent('AMAZON.CancelIntent')
+def cancel():
+    msg = 'Goodbye'
+    return statement(msg)
+
+
 @ask.intent("AMAZON.PauseIntent")
 def pause():
     return audio('Paused the stream').stop()
